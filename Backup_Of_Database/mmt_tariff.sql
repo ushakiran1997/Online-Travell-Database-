@@ -1,0 +1,53 @@
+-- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
+--
+-- Host: localhost    Database: mmt
+-- ------------------------------------------------------
+-- Server version	8.0.27
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tariff`
+--
+
+DROP TABLE IF EXISTS `tariff`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `tariff` (
+  `TNo` int NOT NULL,
+  `routeno` int NOT NULL,
+  `faretype` char(20) NOT NULL,
+  `price_money` int NOT NULL,
+  PRIMARY KEY (`TNo`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tariff`
+--
+
+LOCK TABLES `tariff` WRITE;
+/*!40000 ALTER TABLE `tariff` DISABLE KEYS */;
+INSERT INTO `tariff` VALUES (1,3,'BUR',117),(2,3,'SDR',158),(3,3,'SDS',79),(4,4,'SDR',162),(5,4,'SBS',49),(6,6,'BUR',117),(7,6,'SBS',42),(8,6,'KFS',53),(9,7,'SDR',128),(10,8,'SDS',74),(11,9,'PXR',153),(12,9,'EUR',181),(13,9,'APR',95),(14,11,'KFS',59),(15,13,'EXR',121),(16,14,'SDR',110),(17,14,'SBS',33),(18,15,'SBS',33);
+/*!40000 ALTER TABLE `tariff` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2022-03-06 20:37:33

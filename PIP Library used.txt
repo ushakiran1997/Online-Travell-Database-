@@ -1,0 +1,9 @@
+pip3 install ipython-sql
+pip3 install mysqlclient
+pip install --upgrade ipykernel
+pip instll tabulate
+pip install mysql.connector
+pip install pandas
+pip instll matplotlib
+pip install numpy
+pip install seaborn
